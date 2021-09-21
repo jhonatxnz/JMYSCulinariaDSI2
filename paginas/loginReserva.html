@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="imagem/png" href="Imagens/logo.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Bebidas.css">
+    <style>
+        body{
+    margin: 0%;
+}
+#cabecalho ul{ 
+    padding-left: 20px;
+    margin: 0;
+    background-color: rgb(223, 111, 59);
+    list-style: none;      
+    font-family: cursive;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+ }
+ #cabecalho ul li{
+    display: inline;    
+ }
+ #cabecalho ul li a{
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;   
+    text-decoration: none;
+ }
+ #cabecalho ul li a:hover{
+    color: rgb(31, 30, 30);
+    
+    font-family: cursive;
+    font-size: 18px;
+ }
+
+ .container {
+   width: 15%; /* define a largura do campo */ 
+   position: relative;  /* cria o contexto de posicionamento do botão */   
+   position: absolute;
+   top: 1%;
+   left: 80%;
+ }
+ label {display:block;}
+ input {width: 100%;} /* define a largura do campo igual a largura do container */
+ input,  button {padding: 10px;}
+ button {
+   position: absolute;   
+   top: 0; 
+   right: 0;
+   /* posiciona o botão em relação ao container, mas
+   como o campo está exatamente contido no container
+   o posicionamento se dá também em relação ao campo */
+ }
+ 
+ section{
+   padding: 50px 10px 50px 50px;
+ }
+#paisagem{
+   width:  1800px;
+   height: 800px;
+   background-color: rgba(247, 241, 241, 0.979);
+}
+div.caixa {
+   background-color: rgb(241, 223, 215);
+	width: 390px;
+   height: 400px;
+	display: inline-block;
+   margin-left: 20%;
+   display: flex;
+   justify-content: center;
+   padding: 30px;
+}
+
+div.caixaExterna {  
+   margin-top: 2%;
+   margin-right: 8%;
+	width: 450px;
+	display: inline-block;
+
+}
+div.imagems{
+   padding:10px 10px 10px 10px ;  
+}
+    </style>
+    <title></title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div id="cabecalho">
+                <ul>
+                    <li>
+                        <img src="imagens/logo.png" alt="" width="50px" height="50px">
+                    </li>
+                    <li class="active"><a href="">Bebida</a></li>
+                    <li><a href="">Massa</a></li>
+                    <li><a href="">Sobremesa</a></li>
+                    <li><a href="">Fitnees</a></li>
+                    <li><a href="">Vegano</a></li>
+                    <li><a href="">Carne</a></li>
+                    <li><a href="">Prato feito</a></li>
+                    <form action=" " method="post">
+                        <div class="container">
+                          <input type="search" id="busca" name="q" placeholder="Buscar">
+                          <button type="submit">OK</button>
+                        </div>
+                    </form>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <section>
+        <br>
+        <div id="paisagem">
+            <div class="caixaExterna">
+                <div class="caixa">
+                    <img src="imagens/morango.jpg" alt="Shake de morango" width="300px" height="200px">
+                </div>
+            </div>
+
+            <div class="caixaExterna">
+                <div class="caixa">
+                    <img src="" alt="Vitamina de banana" width="300px" height="200px">
+                </div>
+            </div>
+
+            <div class="caixaExterna">
+                <div class="caixa">
+                    <img src="imagens/abacate.jpg" alt="Vitamina de banana" width="300px" height="200px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>

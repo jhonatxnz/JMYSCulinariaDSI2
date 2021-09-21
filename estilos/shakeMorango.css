@@ -1,0 +1,86 @@
+body{
+    margin: 0%;
+    overflow-x: hidden; 
+}
+
+#cabecalho ul{ 
+    padding-left: 20px;
+    margin: 0;
+    background-color: rgb(223, 111, 59);
+    list-style: none;
+    font-family: cursive;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+ }
+ #cabecalho ul li{
+    display: inline;
+ }
+ #cabecalho ul li a{
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+ }
+ #cabecalho ul li a:hover{
+    color: rgb(31, 30, 30);
+
+    font-family: cursive;
+    font-size: 18px;
+ }
+ 
+ .container {
+   width: 20%; 
+   position: relative; 
+   position: absolute;
+   top: 1%;
+   left: 80%;
+ }
+ label {display:block;}
+ input {width: 100%;} 
+ input,  button {padding: 10px;}
+ button {
+   position: absolute;
+   top: 0; 
+   right: 0;
+
+ }
+ 
+ #colunaE,#colunaD{
+    float: left;
+    width: 15%;
+    justify-content: center;
+ }
+#coluna{
+    margin-top: 3%;
+    margin-left: 8%;
+    width:50% ;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+#container {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: 15px;
+} 
+
+#colunaDeitada{
+    height: 467px;
+    background-color: rgba(247, 241, 241, 0.979);
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.caixa{
+    text-align: center;
+}
+h1{
+    font-family: cursive;
+}
+footer{
+    background-color: silver;
+}

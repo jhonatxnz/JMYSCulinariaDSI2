@@ -1,0 +1,140 @@
+body {
+    margin: 0%;
+    overflow-x: hidden;
+ }
+ 
+ #cabecalho ul {
+    padding-left: 20px;
+    margin: 0;
+    background-color: rgb(223, 111, 59);
+    list-style: none;
+    font-family: cursive;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+ }
+ 
+ #cabecalho ul li {
+    display: inline;
+ }
+ 
+ #cabecalho ul li a {
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+ }
+ 
+ #cabecalho ul li a:hover {
+    color: rgb(31, 30, 30);
+    font-family: cursive;
+    font-size: 18px;
+ }
+ 
+
+ 
+ .container {
+    width: 15%;
+    
+    position: relative;
+   
+    position: absolute;
+    top: 1%;
+    left: 80%;
+ }
+ 
+ label {
+    display: block;
+ }
+ 
+ input {
+    width: 100%;
+ }
+ 
+ 
+ input, button {
+    padding: 10px;
+ }
+ 
+ button {
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+ section {
+    padding: 50px 10px 50px 50px;
+ }
+ 
+ #paisagem {
+    width: 100%;
+    background-color: rgba(247, 241, 241, 0.979);
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+ }
+ 
+ div.caixa {
+    background-color: rgb(241, 223, 215);
+    width: 300px;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    border-radius: 40px;
+    margin-left: 8%;
+ }
+ #titulo {
+   font-family: 'Ma Shan Zheng', cursive;
+   font-size: 400%;
+   margin-left: 45%;
+}
+body{
+   background-color: rgba(247, 241, 241, 0.979);
+}
+img{
+   border-radius: 10px;
+}
+ 
+.btnVA {
+   background-color: #ff6928af;
+   border:#ff6a28;
+   border: 100px;
+   list-style: none;
+}
+.btnVA {
+   position: absolute;
+   display: flex;
+   margin: 0;
+   border-radius: 20px;
+   cursor: pointer;
+   padding: 10px 20px;
+   text-transform: uppercase;
+   color: #fff!important;
+   font-size: 12px;
+   font-weight: 300;
+   flex-direction: column;
+   justify-content: center;
+   opacity: 0;
+   text-decoration: none;
+   list-style: none;
+}
+.btnVA:hover{
+   opacity: 1;
+   list-style: none;
+   text-decoration: none;
+}
+
+#link{
+   text-decoration: none;
+   font-size: 170%;
+   color: black;
+  
+}
+h2{
+    font-family: 'Lato', sans-serif;
+   font-family: 'Play', sans-serif;
+}
+
