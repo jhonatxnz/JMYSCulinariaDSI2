@@ -6,7 +6,7 @@ body {
  #cabecalho ul {
     padding-left: 20px;
     margin: 0;
-    background-color: rgb(223, 111, 59);
+    background-color: #aeccdd;
     list-style: none;
     font-family: cursive;
     font-size: 18px;
@@ -34,13 +34,11 @@ body {
 
  
  .container {
-    width: 15%;
-    
+    width: 20%;
     position: relative;
-   
     position: absolute;
     top: 1%;
-    left: 80%;
+    left: 75%;
  }
  
  label {
@@ -137,4 +135,34 @@ h2{
     font-family: 'Lato', sans-serif;
    font-family: 'Play', sans-serif;
 }
+footer{
+   background-color: #95b8ce;
+}
+.divFooter{
+   display: inline-block;
+   margin-left: 50px;
+   color: white;
+   height: 30%;
+}
+.divFooter ul{
+   text-decoration: none;
+   list-style: none;
+}
+footer{
+   background-color: #95b8ce;
+}
+.divFooter{
+   display: inline-block;
+   margin-left: 50px;
+   color: white;
+   height: 30%;
+   display: inline-block;
+   text-decoration: none;
+}
+a{
+   text-decoration: none;
+   list-style: none;
+   color: white;
+}
+
 

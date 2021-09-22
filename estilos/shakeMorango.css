@@ -1,17 +1,19 @@
 body{
     margin: 0%;
     overflow-x: hidden; 
-}
+    background-color: rgba(247, 241, 241, 0.979);
 
+}
 #cabecalho ul{ 
     padding-left: 20px;
     margin: 0;
-    background-color: rgb(223, 111, 59);
+    background-color:#aeccdd;
     list-style: none;
     font-family: cursive;
     font-size: 18px;
     display: flex;
     align-items: center;
+    height: 60px;
  }
  #cabecalho ul li{
     display: inline;
@@ -24,7 +26,6 @@ body{
  }
  #cabecalho ul li a:hover{
     color: rgb(31, 30, 30);
-
     font-family: cursive;
     font-size: 18px;
  }
@@ -33,8 +34,8 @@ body{
    width: 20%; 
    position: relative; 
    position: absolute;
-   top: 1%;
-   left: 80%;
+   top: 1.3%;
+   left: 76%;
  }
  label {display:block;}
  input {width: 100%;} 
@@ -43,7 +44,6 @@ body{
    position: absolute;
    top: 0; 
    right: 0;
-
  }
  
  #colunaE,#colunaD{
@@ -55,7 +55,7 @@ body{
     margin-top: 3%;
     margin-left: 8%;
     width:50% ;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(247, 241, 241, 0.979);
     float: left;
 }
 #container {
@@ -82,5 +82,21 @@ h1{
     font-family: cursive;
 }
 footer{
-    background-color: silver;
+    background-color: #95b8ce;
+}
+.divFooter ul{
+    text-decoration: none;
+    list-style: none;
+ }
+.divFooter{
+    display: inline-block;
+    margin-left: 50px;
+    height: 30%;
+    text-decoration: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
 }
