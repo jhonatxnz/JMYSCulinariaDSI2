@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/pagBebidas.css">
+    <link href='https://css.gg/chevron-up.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
@@ -33,10 +34,11 @@
                     <li><a href="">Carne</a></li>
                     <li><a href="">Prato feito</a></li>
                     <form action=" " method="post">
-                        <div class="container">
-                            <input type="search" id="busca" name="q" placeholder="Buscar">
-                            <button type="submit">OK</button>
-                        </div>
+                        <form action=" " method="post">
+                            <div class="container">
+                                <input type="search" id="busca" name="q" placeholder="Buscar">
+                                <button type="submit" id="buscaa">OK</button>
+                            </div>
                     </form>
                 </ul>
             </div>
@@ -50,325 +52,369 @@
         
         
         <div class="caixa">
-            <h2>Batida de morango</h2>
-            <img src="Imagens/morango.jpg" alt="Shake de morango" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="shakeMorango.html" id="link">Ver receita 
-            </a></div>
-            </div> 
-            <p>Essa receita vai te conquistar!</p>
-            <a href="shakeMorango.html"><form class="form-inline"></a>
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('n1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="n1" width="24px" height="24px"></a>
+            <h2>Shake de morango</h2>
 
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('n2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="n2" width="24px" height="24px"></a>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/morango.jpg" alt="Shake de morango" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>
+                </div>
+            </div>
+            <p class="descricao">Essa receita vai te conquistar!</p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('s1').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="s1" width="24px" height="24px"></a>
 
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('n3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="n3"width="24px" height="24px" ></a>
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('s2').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s2" width="24px" height="24px"></a>
 
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('n4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="n4"width="24px" height="24px"></a>
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('s3').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s3"width="24px" height="24px" ></a>
 
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('n5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="n5"width="24px" height="24px"></a>
-              </form>
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('s4').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s4"width="24px" height="24px"></a>
+
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('s5').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s5"width="24px" height="24px"></a>
+                  </form>
+            </div>
         </div>
 
 
         
         <div class="caixa">
             <h2>Vitamina de banana</h2>
-            <img src="Imagens/banana.jpg" alt="Vitamina de banana" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
-            </div> 
-            <p>Prepare essa vitamina para um café da tarde!
-            </p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('o1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="o1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('o2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="o2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('o3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="o3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('o4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="o4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('o5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="o5"width="24px" height="24px"></a>
-              </form>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <div id="imagenss">
+                        <a href="" id="link"><img src="Imagens/banana.jpg" alt="Vitamina de banana" width="300px" height="200px" class="imagens"></a>
+                    </div>
+                    
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
+            </div>    
+            <p class="descricao">Prepare essa vitamina para um café da tarde!</p>
+                
+                <div class="estrelas">
+                    <form class="form-inline">
+                        <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('s6').src='Imagens/imgEstrela1'" >
+                            <img src="Imagens/estrela22.png" id="s6" width="24px" height="24px"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('s7').src='Imagens/imgEstrela1'">
+                            <img src="Imagens/estrela22.png" id="s7" width="24px" height="24px"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('s8').src='Imagens/imgEstrela1'">
+                            <img src="Imagens/estrela22.png" id="s8"width="24px" height="24px" ></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('s9').src='Imagens/imgEstrela1'">
+                            <img src="Imagens/estrela22.png" id="s9"width="24px" height="24px"></a>
+                            
+                            <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('s10').src='Imagens/imgEstrela1'">
+                            <img src="Imagens/estrela22.png" id="s10"width="24px" height="24px"></a>
+                      </form>
+                </div>
         </div>
 
 
         <div class="caixa">
             <h2>Vitamina de abacate</h2>
-            <img src="Imagens/abacate.jpg" alt="Vitamina de abacate" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/abacate.jpg" alt="Vitamina de abacate" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
             </div> 
-            <p>Faça essa vitamina rica em fibras!</p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('p1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="p1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('p2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="p2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('p3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="p3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('p4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="p4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('p5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="p5"width="24px" height="24px"></a>
-              </form>
+            <p class="descricao">Faça essa vitamina rica em fibras!</p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('s11').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="s11" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('s12').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s12" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('s13').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s13"width="24px" height="24px" ></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('s14').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s14"width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('s15').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s15"width="24px" height="24px"></a>
+                  </form>
+            </div>
         </div>
+
 
 
         <div class="caixa">
             <h2>Suco de abacaxi</h2>
-            <img src="Imagens/sucoAbacaxi.jpg" alt="Suco de abacaxi" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/sucoAbacaxi.jpg" alt="Vitamina de abacate" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
             </div> 
-            <p>Prepare esse suco para uma boa digestão!</p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('q1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="q1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('q2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="q2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('q3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="q3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('q4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="q4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('q5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="q5"width="24px" height="24px"></a>
-              </form>
+            <p class="descricao">Prepare esse suco para uma boa </p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('s16').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="s16" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('s17').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s17" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('s18').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s18"width="24px" height="24px" ></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('s19').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s19"width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('s20').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s20"width="24px" height="24px"></a>
+                </form>
+            </div>
         </div>
 
 
         <div class="caixa">
             <h2>Suco de laranja</h2>
-            <img src="Imagens/sucoLaranja.jpg" alt="Suco de laranja" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/sucoLaranja.jpg" alt="Vitamina de abacate" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
             </div> 
-            <p>Faça essa receita para refrescar seu dia!</p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('r1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="r1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('r2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="r2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('r3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="r3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('r4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="r4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('r5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="r5"width="24px" height="24px"></a>
-              </form>
+            <p class="descricao">Faça essa receita para refrescar seu dia!</p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('s21').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="s21" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('s22').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s22" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('s23').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s23"width="24px" height="24px" ></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('s24').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s24"width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('s25').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s25"width="24px" height="24px"></a>
+                  </form>
+            </div>
+            
         </div>
 
 
+        
         <div class="caixa">
             <h2>Suco de Maracujá</h2>
-            <img src="Imagens/sucoMaracuja.jpeg" alt="Suco de maracuja" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
-            </div> 
-            <p>Faça esse suco para que você tenha um dia mais calmo!</p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('s1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="s1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('s2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="s2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('s3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="s3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('s4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="s4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('s5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="s5"width="24px" height="24px"></a>
-              </form>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/sucoMaracuja.jpeg" alt="Vitamina de abacate" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
+            </div>
+            <p class="descricao">Faça esse suco para que você tenha um dia mais calmo!</p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('s26').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="s26" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('s27').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s27" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('s28').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s28"width="24px" height="24px" ></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('s29').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s29"width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('s30').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s30"width="24px" height="24px"></a>
+                  </form>
+            </div>
         </div>
-
 
         <div class="caixa">
             <h2>Suco de Melancia</h2>
-            <img src="Imagens/sucoMelancia.jpg" alt="Suco de melancia" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
-            </div> 
-            <p>Faça esse suco para um almoço em família!</p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('t1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="t1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('t2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="t2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('t3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="t3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('t4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="t4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('t5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="t5"width="24px" height="24px"></a>
-              </form>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/sucoMelancia.jpg" alt="Vitamina de abacate" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
+            </div>
+            <p class="descricao">Faça esse suco para um almoço em família!</p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('s36').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="s36" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('s37').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s37" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('s38').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s38"width="24px" height="24px" ></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('s39').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s39"width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('s40').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s40"width="24px" height="24px"></a>
+                  </form>
+            </div>
         </div>
 
-
+        
         <div class="caixa">
             <h2>Suco de Uva</h2>
-            <img src="Imagens/sucoUva.jpeg" alt="Suco de uva" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
-            </div> 
-            <p>Faça esse suco para um jantar com os amigos!</p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('u1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="u1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('u2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="u2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('u3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="u3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('u4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="u4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('u5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="u5"width="24px" height="24px"></a>
-              </form>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/sucoUva.jpeg" alt="Vitamina de abacate" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
+            </div>
+            <p class="descricao">Faça esse suco para um jantar com os amigos!</p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('str').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="str" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('sts').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="sts" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('stt').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="stt"width="24px" height="24px" ></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('stu').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="stu"width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('stv').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="stv"width="24px" height="24px"></a>
+                  </form>
+            </div>
         </div>
 
         
         <div class="caixa">
             <h2>Achocolatado</h2>
-            <img src="Imagens/achocolatado.jpg" alt="achocolatado" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
-            </div> 
-            <p>Prepare esse achocolatado no café da manhã!</p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('v1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="v1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('v2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="v2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('v3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="v3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('v4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="v4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('v5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="v5"width="24px" height="24px"></a>
-              </form>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/achocolatado.jpg" alt="Vitamina de abacate" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
+            </div>
+            <p class="descricao">Bom acompanhamento para o pão frances!</p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('lll').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="lll" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('ll').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="ll" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('lllll').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="lllll"width="24px" height="24px" ></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('l').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="l"width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('llll').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="llll"width="24px" height="24px"></a>
+                  </form>
+            </div>
         </div>
+
 
         <div class="caixa">
             <h2>Suco de limão</h2>
-            <img src="Imagens/suco_limao.jpg" alt="suco de limao" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
-            </div> 
-            <p>Prepare esse suco para tomar com seus amigos!</p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('w1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="w1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('w2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="w2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('w3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="w3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('w4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="w4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('w5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="w5"width="24px" height="24px"></a>
-              </form>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/suco_limao.jpg" alt="Vitamina de abacate" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
+            </div>
+            <p class="descricao">Prepare esse suco para tomar com seus amigos! </p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('41').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="41" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('42').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="42" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('43').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="43"width="24px" height="24px" ></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('44').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="44"width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('45').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="45"width="24px" height="24px"></a>
+                  </form>
+            </div>
         </div>
 
         <div class="caixa">
-            <h2>Chá de hortelã</h2>
-            <img src="Imagens/chaHortela.jpg" alt="cha de hortela" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
-            </div> 
-            <p>Prepare um chá de hortelã para uma noite tranquila de sono!</p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('y1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="y1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('y2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="y2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('y3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="y3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('y4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="y4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('y5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="y5"width="24px" height="24px"></a>
-              </form>
+            <h2>Chá de hortelã </h2>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/chaHortela.jpg" alt="Vitamina de abacate" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
+            </div>
+            <p class="descricao">Fique calmo!</p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('s41').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="s41" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('s42').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s42" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('s43').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s43"width="24px" height="24px" ></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('s44').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s44"width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('s45').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="s45"width="24px" height="24px"></a>
+                  </form>
+            </div>
         </div>
 
         <div class="caixa">
             <h2>Capuccino</h2>
-            <img src="Imagens/capuccino.jpg" alt="capuccino" width="300px" height="200px">
-            <div class="btnVA">
-            <div class="btn1VA" ><a href="https://www.tudogostoso.com.br/" id="link">Ver receita 
-            </a></div>
-            </div> 
-            <p>Prepare um capuccino para tomar no seu café da manhã!</p>
-            <form class="form-inline">
-                <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('z1').src='Imagens/imgEstrela1'" >
-                    <img src="Imagens/estrela22.png" id="z1" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('z2').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="z2" width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('z3').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="z3"width="24px" height="24px" ></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('z4').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="z4"width="24px" height="24px"></a>
-
-                    <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('z5').src='Imagens/imgEstrela1'">
-                    <img src="Imagens/estrela22.png" id="z5"width="24px" height="24px"></a>
-              </form>
+            <div class="verReceita">
+                <div class="tooltip">
+                    <a href="" id="link"><img src="Imagens/capuccino.jpg" alt="Vitamina de abacate" width="300px" height="200px" class="imagens"></a>
+                    <span class="tooltiptext"><strong> Ver receita</strong></span>  
+                </div>
+            </div>
+            <p class="descricao">Prepare um capuccino para tomar no seu café da manhã!</p>
+            <div class="estrelas">
+                <form class="form-inline">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)"onmouseenter="document.getElementById('v').src='Imagens/imgEstrela1'" >
+                        <img src="Imagens/estrela22.png" id="v" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)"onmouseenter="document.getElementById('vv').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="vv" width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)"onmouseenter="document.getElementById('vvv').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="vvv"width="24px" height="24px" ></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)"onmouseenter="document.getElementById('vvvv').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="vvvv"width="24px" height="24px"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)"onmouseenter="document.getElementById('vvvvv').src='Imagens/imgEstrela1'">
+                        <img src="Imagens/estrela22.png" id="vvvvv"width="24px" height="24px"></a>
+                  </form>
+            </div>
+        </div>
         </div>
     </div><br><br>
    
@@ -413,6 +459,12 @@
             </ul>
         </div>
 
+
         <a href="file:///C:/Users/baeta/OneDrive/Documentos/Html%20teste%201/Cotuca%20-%20bd%201%20bimestre/Html/Segundo%20Semestre/PPP/shakeMorango.html"><div class="divFooter"><img src="imagens/logo.png" alt="" width="300px" height="300px"></a></div>
+        
+        <div class="divFooter">
+            <a href="#cabecalho"><button id="rolarPcima"><i class="gg-chevron-up"></i></i></button></a><br><br><br><br><br><br>
+        </div>
+        </div>
     </footer>
 </body>

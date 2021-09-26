@@ -1,6 +1,7 @@
 body {
     margin: 0%;
     overflow-x: hidden;
+    background-color: rgba(247, 241, 241, 0.979);
  }
  
  #cabecalho ul {
@@ -45,20 +46,19 @@ body {
     display: block;
  }
  
- input {
-    width: 100%;
- }
- 
- 
- input, button {
-    padding: 10px;
- }
- 
- button {
-    position: absolute;
-    top: 0;
-    right: 0;
- }
+ #busca{
+   width: 100%;
+}
+
+#busca, #buscaa {
+   padding: 10px;
+}
+
+#buscaa{
+   position: absolute;
+   top: 0;
+   right: 0;
+}
  section {
     padding: 50px 10px 50px 50px;
  }
@@ -72,72 +72,82 @@ body {
     grid-gap: 50px;
  }
  
- div.caixa {
-    background-color: rgb(241, 223, 215);
-    width: 300px;
-    height: 310px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    align-items: center;
-    border-radius: 40px;
-    margin-left: 8%;
- }
- #titulo {
-   font-family: 'Ma Shan Zheng', cursive;
-   font-size: 400%;
-   margin-left: 45%;
-}
-body{
-   background-color: rgba(247, 241, 241, 0.979);
-}
-img{
-   border-radius: 10px;
-}
- 
-.btnVA {
-   background-color: #ff6928af;
-   border:#ff6a28;
-   border: 100px;
-   list-style: none;
-}
-.btnVA {
-   position: absolute;
+div.caixa {
+   background-color: rgb(215, 234, 241);
+   width: 300px;
    display: flex;
-   margin: 0;
-   border-radius: 20px;
-   cursor: pointer;
-   padding: 10px 20px;
-   text-transform: uppercase;
-   color: #fff!important;
-   font-size: 12px;
-   font-weight: 300;
-   flex-direction: column;
    justify-content: center;
-   opacity: 0;
-   text-decoration: none;
-   list-style: none;
+   flex-direction: column;
+   padding: 30px;
+   align-items: center;
+   border-radius: 40px;
+   margin-left: 16%; 
 }
-.btnVA:hover{
-   opacity: 1;
-   list-style: none;
-   text-decoration: none;
+#titulo {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 400%;
+  margin-left: 45%;
+}
+
+img{
+  border-radius: 10px;
 }
 
 #link{
-   text-decoration: none;
-   font-size: 170%;
-   color: black;
-  
+  text-decoration: none;
+  font-size: 170%;
+  color: black;
+ 
 }
 h2{
-    font-family: 'Lato', sans-serif;
-   font-family: 'Play', sans-serif;
+   font-family: 'Lato', sans-serif;
+  font-family: 'Play', sans-serif;
 }
-footer{
-   background-color: #95b8ce;
+
+
+.estrelas{
+   height: 40px;
+   width: 140px;
+
 }
+.descricao{
+   font-size: 22px;
+}
+
+.tooltip {
+   position: relative;
+   display: inline-flex;
+   align-items: center;
+ }
+ 
+ .tooltiptext{
+   transition: opacity 1s;
+
+ }
+ .tooltip .tooltiptext {
+   opacity: 0;
+   width: 120px;
+   color: rgb(0, 0, 0);
+   text-align: center;
+   padding: 5px 0;
+   border-radius: 6px;
+   font-size: 25px;
+   position: absolute;
+   z-index: 1;
+   margin-left: 30%;
+ }
+ 
+ .tooltip:hover .tooltiptext {
+   opacity: 1; 
+ }
+ .imagens{
+    transition:all 1s;
+ }
+ .imagens:hover{
+
+   filter: blur(4px);
+}
+
 .divFooter{
    display: inline-block;
    margin-left: 50px;
@@ -153,9 +163,9 @@ footer{
 }
 .divFooter{
    display: inline-block;
-   margin-left: 50px;
+   margin-left: 35px;
    color: white;
-   height: 30%;
+   height: 15%;
    display: inline-block;
    text-decoration: none;
 }
@@ -164,5 +174,20 @@ a{
    list-style: none;
    color: white;
 }
-
+#rolarPcima{
+   border-radius: 100%;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: transparent;
+   border: 3px solid white;
+}
+.gg-chevron-up{
+   color: white;
+}
+html{
+   scroll-behavior: smooth;
+}
 
