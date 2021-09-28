@@ -6,11 +6,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/shakeMorango.css">
+    <link rel="stylesheet" href="estilos/ShakeMorango.css">
     <link href='https://css.gg/alarm.css' rel='stylesheet'>
     <link href='https://css.gg/bowl.css' rel='stylesheet'>
-
-    <title></title>
+    <link href='https://css.gg/comment.css' rel='stylesheet'>
+    <link href='https://css.gg/sun.css' rel='stylesheet'>
+    <link href='https://css.gg/arrow-top-right-o.css' rel='stylesheet'>
+    <link href='https://css.gg/chevron-up.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shake de morango</title>
 </head>
 
 <body>
@@ -20,19 +25,26 @@
             <div id="cabecalho">
                 <ul>
                     <li>
-                       <a href="pagSobremesa.html"><img src="imagens/logo.png" alt="" width="55px" height="55px"></a> 
+                        <a href="">
+                            <img src="Imagens/logo.png" alt="" width="50px" height="50px"
+                                title="Ir para página principal">
+                        </a>
                     </li>
-                    <li class="active"><a href="">Bebida</a></li>
+                    <li><a href="">Bebida</a></li>
                     <li><a href="">Massa</a></li>
                     <li><a href="">Sobremesa</a></li>
                     <li><a href="">Fitnees</a></li>
                     <li><a href="">Vegano</a></li>
                     <li><a href="">Carne</a></li>
                     <li><a href="">Prato feito</a></li>
+                    <img src="Imagens/efeito4.gif" alt="" width="70px" height="70px" id="efeito"
+                        title="Adicionar receita">
+                    <img src="Imagens/facaGarfo.png" alt="" width="50px" height="50px" id="adcReceita">
+
                     <form action=" " method="post">
                         <div class="container">
                             <input type="search" id="busca" name="q" placeholder="Buscar">
-                            <button type="submit">OK</button>
+                            <button type="submit" id="buscaa">OK</button>
                         </div>
                     </form>
                 </ul>
@@ -45,8 +57,7 @@
 
         </div>
         <div id="coluna">
-            <h1>Shake de morango</h1>
-         
+            <h1 id="pisca">Shake de morango</h1>
             <div id="paraImg">
                 <img src="Imagens/morango.jpg" alt="">
                 <div id="detalhes">
@@ -55,68 +66,115 @@
                     <p>15 minutos</p>
                     <i class="gg-bowl" style="color: #95b8ce"></i>
                     <p>2 porções</p>
-                    <i class="gg-comment" style="color: #95b8ce"></i>
+                    <a href="#containerComment">
+                        <button id="commentButton"><i class="gg-comment" style="color: #95b8ce" title="Ver comentários"></i></button>
+                    </a>
                     <p>0 comentários</p>
                     <i class="gg-sun" style="color: #95b8ce"></i>
                     <p>0 estrelas</p>
-                    <i class="gg-arrow-top-right-o" style="color: #95b8ce"></i>
+                    <i class="gg-arrow-top-right-o" style="color: #95b8ce" title="Compartilhar receita"></i>
                     <p>compartilhe</p>
                 </div>
             </div>
-         
             <h1>Descrição:</h1>
-            <p>
+            <p style="font-size: 20px;">
                 Para refrescar o calor, abuse da Vitamina de Morango, além de gostosa é muito nutritiva.
             </p>
             <h1>Ingredientes:</h1>
-            <ul>
-                <li>400ml ou 2 xícaras de chá de leite.</li>
-                <li>300g ou 1 caixa de morangos.</li>
-                <li>200g de ou ⅔ de xícara de chá de Confeitare Leite Condensado.</li>
+            <ul class="lista">
+                <li class="ingMdp"><span>&#10148;</span> 400ml ou 2 xícaras de chá de leite.</li>
+                <li class="ingMdp"><span>&#10148;</span> 300g ou 1 caixa de morangos.</li>
+                <li class="ingMdp"><span>&#10148;</span> 200g de ou ⅔ de xícara de chá de Confeitar e Leite Condensado.
+                </li>
             </ul>
             <h1>Modo de preparo:</h1>
-            <ul>
-                <li>Bata todos os ingredientes no liquidificador até ficar homogêneo.</li>
-                <li>Sirva gelado ou em temperatura ambiente.</li>
+            <ul class="lista">
+                <li class="ingMdp"><span>&#10148;</span> Bata todos os ingredientes no liquidificador até ficar
+                    homogêneo.</li>
+                <li class="ingMdp"><span>&#10148;</span> Sirva gelado ou temperatura ambiente.</li>
             </ul>
+
+            <div id="containerComment">
+                <div id="comentarios">
+                    <i class="fa fa-comments-o" id="commentIcon"></i>
+                    <h2>Comentários:</h2>
+                </div>
+                <div id="commentIsolado">
+                    <div id="ladoEsquerdo">
+                            <img src="Imagens/user.jpg" alt="" width="60px" height="60px" class="usuarios">
+                            <div id="informacoes">
+                                <p>Renan</p>
+                                <p>26/09/2021</p>
+                            </div>
+                    </div>
+                    <div id="ladoMeio">
+                        <p id="opiniao">Ótima receita!!!super recomendo pra quem está na dúvida 😁</p>
+                    </div>
+                    <div id="ladoDireito">
+                        <i class="fa fa-heart" style="font-size:24px" id="corazon"></i>
+                    </div>
+                </div>
+                <hr id="hr">
+                <div id="commentIsolado">
+                    <div id="ladoEsquerdo">
+                            <img src="Imagens/user.png" alt="" width="60px" height="60px" class="usuarios">
+                            <div id="informacoes">
+                                <p>Renan</p>
+                                <p>26/09/2021</p>
+                            </div>
+                    </div>
+                    <div id="ladoMeio">
+                        <p id="opiniao">Ótima receita!!!super recomendo pra quem está na dúvida 😁</p>
+                    </div>
+                    <div id="ladoDireito">
+                        <i class="fa fa-heart" style="font-size:24px" id="corazon"></i>
+                    </div>
+                </div>
+            </div>
+            
         </div>
+        <div id="colunaD">
+            <div id="icons">
+                <img src="Imagens/instagram.png" alt="" width="64px" height="64px">
+                <img src="Imagens/whatsapp.png" alt="" width="64px" height="64px">
+                <img src="Imagens/youtube.png" alt="" width="64px" height="64px">
+                <img src="Imagens/facebook.png" alt="" width="64px" height="64px">
+            </div>
 
         </div>
     </div>
 
-    <h1>Veja tambem:</h1>
+    <h1 style="padding: 10px;">Veja também: </h1>
 
     <div id="colunaDeitada">
-        <div class="caixa"> 
+        <div class="caixa">
             <h1>Vitamina de abacate</h1>
-            <a href=""><img src="Imagens/abacate.jpg" alt="" width="400px" height="280px"></a>
+            <a href=""><img src="Imagens/abacate.jpg" alt="" width="400px" height="280px" class="imagens"></a>
         </div>
         <div class="caixa">
-            <h1>Suco de Limão</h1>
-            <a href=""><img src="imagens/suco_limao.jpg" alt="" width="400px" height="280px"></a>
+            <h1>Vitamina de banana</h1>
+            <a href=""><img src="Imagens/banana.jpg" alt="" width="400px" height="280px" class="imagens"></a>
         </div>
         <div class="caixa">
-            <h1>Achocolatado</h1>
-            <a href=""><img src="Imagens/achocolatado.jpg" alt="" width="400px" height="280px"></a>
+            <h1>Chá</h1>
+            <a href=""><img src="Imagens/cha.jpg" alt="" width="400px" height="280px" class="imagens"></a>
         </div>
     </div>
-
-   <footer>
+    <footer>
         <div class="divFooter">
             <ul>
-            <h2>JMYS</h2>
-            <li>Nossa história</li>
-            <li>Contato</li><br><br><br><br><br><br>
-            
+                <h2>JMYS</h2>
+                <li>Nossa história</li>
+                <li>Contato</li><br><br><br><br><br><br>
             </ul>
         </div>
 
         <div class="divFooter">
             <ul>
                 <h2>Categorias</h2>
-              <a href="pagBebidas.html"><li>Bebidas</li></a>
+                <li>Bebidas</li>
                 <li>Massas</li>
-               <a href="pagSobremesa.html"><li>Sobremesas</li></a>
+                <li>Sobremesas</li>
                 <li>Fitnees</li>
                 <li>Fitnees</li>
                 <li>Vegano</li>
@@ -127,22 +185,32 @@
 
         <div class="divFooter">
             <ul>
-                <li><h2>Receitas do chefe</h2></li>
-                <li>;-;</li>
-                <li>;-;</li>
-                <li>;-;</li><br><br><br><br><br>
+                <li>
+                    <h2>Receitas do chefe</h2>
+                </li>
+                <li>Fricassê de frango</li>
+                <li>Strogonoff</li>
+                <li>Sorvetone</li><br><br><br><br><br>
             </ul>
         </div>
 
         <div class="divFooter">
             <ul>
                 <h2>Interaja com a gente</h2>
-                <a href="https://www.facebook.com/JMYS-109075644863843"><img src="imagens/logoFacebook.png" alt="" width="32px" height="32px" style="margin-bottom: 4.3px;"></a>
-               <a href="https://www.instagram.com/jmysculinaria/"><img src="imagens/logoInstagram.png" width="40px" height="40px"></a><br><br><br><br><br><br><br>
+                <a href=""><img src="Imagens/logoFacebook.png" alt="" width="32px" height="32px"
+                        style="margin-bottom: 4.3px;" title="Facebook"></a>
+                <a href=""><img src="Imagens/logoInstagram.png" width="40px" height="40px" title="Instagram"></a>
+                <br><br><br><br><br><br><br>
             </ul>
         </div>
+        <div class="divFooter">
+            <img src="imagens/logo.png" alt="" width="300px" height="300px">
+        </div>
+        <div class="divFooter">
+            <a href="#cabecalho"><button id="rolarPcima" title="Voltar ao início"><i
+                        class="gg-chevron-up"></i></i></button></a>
+            <br><br><br><br><br><br>
+        </div>
 
-        <a href="file:///C:/Users/baeta/OneDrive/Documentos/Html%20teste%201/Cotuca%20-%20bd%201%20bimestre/Html/Segundo%20Semestre/PPP/shakeMorango.html"><div class="divFooter"><img src="imagens/logo.png" alt="" width="300px" height="300px"></a></div>
     </footer>
-   
 </body>

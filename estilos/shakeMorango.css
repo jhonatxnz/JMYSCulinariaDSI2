@@ -1,121 +1,323 @@
-body{
-    margin: 0%;
-    overflow-x: hidden; 
-    background-color: rgba(247, 241, 241, 0.979);
+html {
+   scroll-behavior: smooth;
 }
-#cabecalho ul{ 
-    padding-left: 20px;
-    margin: 0;
-    background-color:#aeccdd;
-    list-style: none;
-    font-family: cursive;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    height: 60px;
- }
- #cabecalho ul li{
-    display: inline;
- }
- #cabecalho ul li a{
-    color: white;
-    padding: 10px 30px;
-    display: inline-block;
-    text-decoration: none;
- }
- #cabecalho ul li a:hover{
-    color: rgb(31, 30, 30);
-    font-family: cursive;
-    font-size: 18px;
- }
- 
- .container {
-   width: 20%; 
-   position: relative; 
-   position: absolute;
-   top: 1.3%;
-   left: 76%;
- }
- label {display:block;}
- input {width: 100%;} 
- input,  button {padding: 10px;}
- button {
-   position: absolute;
-   top: 0; 
-   right: 0;
- }
- 
- #colunaE,#colunaD{
-    float: left;
-    width: 15%;
-    justify-content: center;
- }
-#coluna{
-    margin-top: 3%;
-    margin-left: 8%;
-    width:50% ;
-    float: left;
-}
-#container {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    padding: 15px;
-} 
 
-#colunaDeitada{
-    height: 467px;
-    display: grid;
-    padding: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
-    display: flex;
-    justify-content: space-evenly;
+body {
+   margin: 0%;
+   overflow-x: hidden;
 }
-.caixa{
-    text-align: center;
+
+h2, h1 {
+   font-family: sans-serif;
+   /* animation: cor 8s 1;
+   animation-iteration-count: infinite; */
 }
-h1{
-    font-family: cursive;
+#pisca{
+   animation: cor 8s 1;
+   animation-iteration-count: infinite;
 }
-footer{
-    background-color: #95b8ce;
+@keyframes cor{
+   0%{
+      color: red;
+   }
+   10%{
+      color: orange;
+   }
+   20%{
+      color: yellow;
+   }
+   30%{
+      color: yellowgreen;
+   }
+   40%{
+      color: green;
+   }
+   50%{
+      color: cyan;
+   }
+   60%{
+      color: blue;
+   }
+   70%{
+      color: purple;
+   }
+   80%{
+      color: pink;
+   }
+   90%{
+      color: rgb(89, 0, 255);
+   }
+   100%{
+      color: rgb(255, 0, 64);
+   }
 }
-.divFooter ul{
-    text-decoration: none;
-    list-style: none;
- }
-.divFooter{
-    display: inline-block;
-    margin-left: 50px;
-    height: 30%;
-    text-decoration: none;
-    color: white;
+
+/*---------------------------MENU-----------------------------------*/
+
+#cabecalho ul {
+   padding-left: 20px;
+   margin: 0;
+   background-color: #aeccdd;
+   list-style: none;
+   font-family: cursive;
+   font-size: 18px;
+   display: flex;
+   align-items: center;
+   height: 60px;
 }
-a{
-    text-decoration: none;
-    list-style: none;
-    color: white;
+
+#cabecalho ul li {
+   display: inline;
 }
-.gg-bowl{
- margin-left: 2.5%;
+
+#cabecalho ul li a {
+   color: white;
+   padding: 10px 30px;
+   display: inline-block;
+   text-decoration: none;
+}
+
+#cabecalho ul li a:hover {
+   color: rgb(31, 30, 30);
+   font-family: cursive;
+   font-size: 18px;
+}
+
+/*--------------------Adicinar receita--------------------------*/
+
+#adcReceita {
+   margin-left: 18%;
+}
+
+#efeito {
+   position: absolute;
+   left: 70.6%;
+   opacity: 0;
+}
+
+#efeito:hover {
+   opacity: 1;
+   animation: loading 8s ease;
+   animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+   0% {
+      transform: rotate(0);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+/*--------------------Barra de pesquisa--------------------------*/
+
+.container {
+   width: 15%;
+   /* define a largura do campo */
+   position: relative;
+   /* cria o contexto de posicionamento do botão */
+   position: absolute;
+   top: 1%;
+   left: 80%;
+}
+
+#busca {
+   width: 100%;
+}
+
+#busca, #buscaa {
+   padding: 10px;
+}
+
+#buscaa {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+/*---------------------Corpo-------------------------*/
+
+#receita {
+   width: 15%;
+   /* define a largura do campo */
+   position: relative;
+   /* cria o contexto de posicionamento do botão */
+   position: absolute;
+   top: 1%;
+   left: 80%;
+}
+
+#colunaE, #colunaD {
+   float: left;
+   width: 25%;
+   justify-content: center;
+}
+
+#coluna {
+   margin-top: 3%;
+   margin-left: 8%;
+   width: 50%;
+   background-color: rgb(255, 255, 255);
+   float: left;
+}
+
+#container {
+   display: flex;
+   grid-template-columns: 1fr 1fr 1fr;
+   width: 100%;
+   padding: 15px;
+}
+#paraImg {
+   border: 2px solid #aeccdd;
+   width: 700px;
 }
 #detalhes {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-gap: 10px;
-    display: flex;
-    align-items: baseline;
- }
- #detalhes {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-gap: 10px;
-    display: flex;
-    align-items: baseline;
-    margin-left: 50px;
- }
- #paraImg{
-    border: 2px solid #aeccdd;
-    width: 700px;
- }
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+   display: flex;
+   align-items: baseline;
+   margin-left: 50px;
+}
+#commentButton{
+   border: transparent;
+   width: 20px;
+   height: 20px;
+   background-color: transparent;
+}
+/*position: fixed;*/
+
+#colunaDeitada {
+   height: 467px;
+   background-color: rgba(241, 245, 247, 0.979);
+   display: grid;
+   padding: 20px;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 50px;
+   display: flex;
+   justify-content: space-evenly;
+}
+.caixa {
+   text-align: center;
+}
+/*---------------------COMENTARIOS---------------------*/
+#containerComment{
+   background-color: rgb(243, 247, 247);
+}
+#comentarios{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+   display: flex;
+   align-items: baseline;
+   margin-left: 25%;
+}
+#commentIcon{
+   font-size:66px;
+   color: #aeccdd;   
+}
+#commentIsolado{
+   display: flex;
+   width: 95%;
+   height:100px;
+   
+   /* border-radius: 30px;
+   border: 1px solid gray; */
+}
+#ladoEsquerdo{
+   width: 20%;
+   height:100px;
+   
+   display: flex;
+}
+#ladoMeio{
+   width: 70%;
+   height:100px;
+   
+   text-align: center;
+}
+#ladoDireito{
+   width: 10%;
+   height:100px;
+   
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+#corazon:hover{
+   color: red;
+}
+#corazon{
+   
+}
+.usuarios{
+   border-radius: 50%;
+   padding: 15px ;
+}
+#informacoes{
+   font-size: 15px;
+}
+#opiniao{
+   margin-top: 7%;
+}
+
+/*---------------------Rodape---------------------*/
+
+footer {
+   background-color: #95b8ce;
+}
+
+.divFooter {
+   display: inline-block;
+   margin-left: 110px;
+   color: white;
+   height: 30%;
+}
+
+.divFooter ul {
+   list-style: none;
+   text-decoration: none;
+}
+
+.lista {
+   list-style: none;
+   text-decoration: none;
+}
+
+.ingMdp {
+   padding: 3px;
+}
+
+.imagens:hover {
+   transition: all 0.5s;
+   width: 410px;
+   height: 290px;
+}
+
+span {
+   color: #aeccdd;
+}
+.gg-comment{
+   font-size: 200px;
+}
+
+/*---------------------Botao que rola para cima---------------------*/
+
+#rolarPcima {
+   border-radius: 100%;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: transparent;
+   border: 3px solid white;
+}
+
+.gg-chevron-up {
+   color: white;
+}
+hr{
+   border: 1px solid rgb(228, 225, 225);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="imagem/png" href="imagens/logo.png" /> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/Cadastro.css">
+    <title></title>
+
+</head>
+<body>
+    
+    <header id="header">
+        
+    </header>
+    <!--
+        <script src="./script.js"></script>
+
+    -->
+        
+    <div class="container">
+        <div class="title">Cadastro JMYS Culinária</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nome Completo</span>
+                    <input type="text" id="Nome" placeholder="Insira seu Nome" required >
+                </div>
+                <div class="input-box">
+                    <span class="details">Nickname</span>
+                    <input type="text" id="NomeUsuario" placeholder="Insira seu Usuário" required >
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" id="email" placeholder="Insira seu Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Número de Telefone</span>
+                    <input type="text" id="Numero" placeholder="Insira seu Número" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Senha</span>
+                    <input type="text" id="Senha" placeholder="Insira sua Senha" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirmar Senha</span>
+                    <input type="text" placeholder="Confirme sua Senha" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Sexo</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Masculino</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Feminino</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefiro não dizer</span>
+                    </label>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Cadastrar" onclick="ExibeDados()">
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
