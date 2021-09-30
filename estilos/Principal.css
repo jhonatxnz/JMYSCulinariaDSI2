@@ -42,7 +42,7 @@
     animation: text 10s 1;
     animation-iteration-count: 1;
 }
- /* @keyframes text{
+  /* @keyframes text{
     0%{
         color: black;
         margin-top: 20px;
@@ -59,7 +59,7 @@
         color: rgb(32, 219, 210);
         margin-top: 120px;
     }
-} */
+}  */
 
 .texto{
     
@@ -104,4 +104,20 @@ p{
     transform: rotate(45deg);
     margin-top: -33%;
     margin-left: 93.6%;
+}
+#acesso{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    border-radius: 45px;
+    background: linear-gradient(90deg,#55e7fc,#0162c8,#55e7fc);
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+    border-color: transparent;
+    margin-left: 43%;
+}
+#acesso:hover{
+    letter-spacing: 2px;
 }
