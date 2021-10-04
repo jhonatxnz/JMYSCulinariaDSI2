@@ -203,7 +203,7 @@ h2, h1 {
 }
 /*---------------------COMENTARIOS---------------------*/
 #containerComment{
-   
+   margin-right: 10%;  
 }
 #comentarios{
    display: grid;
@@ -282,7 +282,10 @@ footer {
    list-style: none;
    text-decoration: none;
 }
-
+.divFooter ul a{
+   color: white;
+   text-decoration: none;  
+}
 .lista {
    list-style: none;
    text-decoration: none;

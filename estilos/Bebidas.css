@@ -199,11 +199,16 @@ footer {
    margin-left: 110px;
    color: white;
    height: 30%;
+   
 }
 
 .divFooter ul {
    list-style: none;
-   text-decoration: none;
+   text-decoration: none;  
+}
+.divFooter ul a{
+   color: white;
+   text-decoration: none;  
 }
 
 #buttonn {
