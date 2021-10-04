@@ -203,7 +203,7 @@ h2, h1 {
 }
 /*---------------------COMENTARIOS---------------------*/
 #containerComment{
-   background-color: rgb(243, 247, 247);
+   margin-right: 10%;  
 }
 #comentarios{
    display: grid;
@@ -261,7 +261,10 @@ h2, h1 {
 #opiniao{
    margin-top: 7%;
 }
-
+hr{
+   border: 1px solid rgb(228, 225, 225);
+   width: 700px;
+}
 /*---------------------Rodape---------------------*/
 
 footer {
@@ -279,7 +282,10 @@ footer {
    list-style: none;
    text-decoration: none;
 }
-
+.divFooter ul a{
+   color: white;
+   text-decoration: none;  
+}
 .lista {
    list-style: none;
    text-decoration: none;
@@ -317,7 +323,4 @@ span {
 
 .gg-chevron-up {
    color: white;
-}
-hr{
-   border: 1px solid rgb(228, 225, 225);
 }
