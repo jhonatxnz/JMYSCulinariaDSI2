@@ -1,15 +1,107 @@
-*{
-   margin: 0;
-   padding: 0;
-   font-family: sans-serif;
-   box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap%27%27');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap%27%27');
+html {
+    scroll-behavior: smooth;
 }
- /* CORPO */
- #container{
-     display: grid;
-     grid-template-columns: 1fr 1fr;
- }
- .cor{
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecalho ul {
+    padding-left: 20px;
+    margin: 0;
+    background-color: #aeccdd;
+    list-style: none;
+    font-family: cursive;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+#cabecalho ul li {
+    display: inline;
+}
+
+#cabecalho ul li a {
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#cabecalho ul li a:hover {
+    color: rgb(31, 30, 30);
+    font-family: cursive;
+    font-size: 18px;
+}
+
+/*--------------------Adicinar receita--------------------------*/
+
+#adcReceita {
+    margin-left: 45.5%;
+}
+
+#efeito {
+    position: absolute;
+    left: 70.6%;
+    opacity: 0;
+}
+
+#efeito:hover {
+    opacity: 1;
+    animation: loading 8s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*--------------------Barra de pesquisa--------------------------*/
+
+/* Corpo */
+
+.container {
+    width: 15%;
+    /* define a largura do campo */
+    position: relative;
+    /* cria o contexto de posicionamento do botão */
+    position: absolute;
+    top: 1%;
+    left: 80%;
+}
+
+#busca {
+    width: 100%;
+}
+
+#busca, #buscaa {
+    padding: 10px;
+}
+
+#buscaa {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* CORPO */
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cor {
     width: 950px;
     height: 440px;
     background-color: rgba(143, 191, 86);
@@ -19,7 +111,7 @@
     align-items: center;
 }
 
-.cor2{
+.cor2 {
     width: 952px;
     height: 440px;
     background-color: rgba(115, 180, 219);
@@ -29,7 +121,7 @@
     align-items: center;
 }
 
-.cor3{
+.cor3 {
     width: 950px;
     height: 440px;
     background-color: rgba(230, 196, 141);
@@ -38,11 +130,13 @@
     flex-direction: column;
     align-items: center;
 }
-.text{
+
+.text {
     animation: text 10s 1;
     animation-iteration-count: 1;
 }
-  /* @keyframes text{
+
+/* @keyframes text{
     0%{
         color: black;
         margin-top: 20px;
@@ -61,63 +155,255 @@
     }
 }  */
 
-.texto{
-    
-    width:600px ;
-    height:100px ;
+.texto {
+    width: 600px;
+    height: 100px;
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-} 
-h2{
-    font-size: 60px;
 }
-p{
-    
-    font-family: initial;
-    font-size: 36px;
+
+.titulo {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteudo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 29px;
     letter-spacing: 1px;
 }
-#quadradoVerde{
-    height:120px;
-    width:120px;
+
+#quadradoVerde {
+    height: 120px;
+    width: 120px;
     background-color: rgba(143, 191, 86);
     transform: rotate(45deg);
     margin-top: -124%;
     margin-left: 93.6%;
 }
-#quadradoAzul{
-    height:120px;
-    width:120px;
+
+#quadradoAzul {
+    height: 120px;
+    width: 120px;
     background-color: rgba(115, 180, 219);
     transform: rotate(45deg);
     margin-top: -75%;
     margin-left: 93.6%;
 }
-#quadradoMarrom{
-    height:120px;
-    width:120px;
+
+#quadradoMarrom {
+    height: 120px;
+    width: 120px;
     background-color: rgba(230, 196, 141);
     transform: rotate(45deg);
     margin-top: -33%;
     margin-left: 93.6%;
 }
-#acesso{
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: white;
-    text-decoration: none;
-    border-radius: 45px;
-    background: linear-gradient(90deg,#55e7fc,#0162c8,#55e7fc);
+
+/* botao */
+
+#acesso {
+    position: relative;
     font-size: 18px;
     width: 300px;
     height: 50px;
     border-color: transparent;
     margin-left: 43%;
+    border-radius: 30px;
 }
-#acesso:hover{
+
+#acesso a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.514);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+
+#acesso a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.596), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+
+#acesso:hover {
     letter-spacing: 2px;
+}
+
+#acesso:hover a::before {
+    transform: skewX(45deg) translateX(200%);
+}
+
+#acesso::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #2bff6b;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+#acesso:hover::before {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+
+#acesso::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #2bff6b;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+#acesso:hover::after {
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+
+#soPraAlinhar {
+    display: grid;
+    place-items: center;
+    height: 60vh;
+}
+
+#items-wrapper {
+    width: 50vw;
+}
+
+/* 
+    display:grid;
+    place-items:center;
+    height:100vh; */
+
+#items {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.item {
+    flex: none;
+    width: 100%;
+    height: 400px;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---------------------Rodape---------------------*/
+
+h2, h1 {
+    font-family: sans-serif;
+}
+
+footer {
+    background-color: #95b8ce;
+}
+
+.divFooter {
+    display: inline-block;
+    margin-left: 110px;
+    color: white;
+    height: 30%;
+}
+
+.divFooter ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.divFooter ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.lista {
+    list-style: none;
+    text-decoration: none;
+}
+
+.ingMdp {
+    padding: 3px;
+}
+
+.imagens:hover {
+    transition: all 0.5s;
+    width: 410px;
+    height: 290px;
+}
+
+span {
+    color: #aeccdd;
+}
+
+.gg-comment {
+    font-size: 200px;
+}
+
+/*---------------------Botao que rola para cima---------------------*/
+
+#rolarPcima {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+.gg-chevron-up {
+    color: white;
 }
