@@ -73,11 +73,15 @@
                     <p>0 comentários</p>
                     <i class="gg-sun" style="color: #95b8ce"></i>
                     <p>0 estrelas</p>
-                    <i class="gg-arrow-top-right-o" style="color: #95b8ce" title="Compartilhar receita"></i>
+                    
+                    <i class="gg-arrow-top-right-o" style="color: #95b8ce"
+                        title="Ver comentários"></i>
                     <p>compartilhe</p>
                 </div>
             </div>
+
             <h1>Descrição:</h1>
+            
             <p style="font-size: 20px;">
                 Para refrescar o calor, abuse da Vitamina de Morango, além de gostosa é muito nutritiva.
             </p>
@@ -94,6 +98,7 @@
                     homogêneo.</li>
                 <li class="ingMdp"><span>&#10148;</span> Sirva gelado ou temperatura ambiente.</li>
             </ul>
+
 
             <div id="containerComment">
                 <div id="comentarios">
@@ -112,7 +117,8 @@
                         <p id="opiniao">Ótima receita!!!super recomendo pra quem está na dúvida 😁</p>
                     </div>
                     <div id="ladoDireito">
-                        <i class="fa fa-heart" style="font-size:24px" id="corazon"></i>
+                        <i class="fa fa-heart" style="font-size:24px" id="corazon" onclick="corazon()"></i>
+                        <p id="likes">   </p>
                     </div>
                 </div>
                 <hr id="hr">
@@ -128,7 +134,8 @@
                         <p id="opiniao">Shake maravilhoso,vou tentar com outras frutas</p>
                     </div>
                     <div id="ladoDireito">
-                        <i class="fa fa-heart" style="font-size:24px" id="corazon"></i>
+                        <i class="fa fa-heart" style="font-size:24px" id="corazon" onclick="corazon()"></i>
+                        <p id="likes">   </p>
                     </div>
                 </div>
             </div>
@@ -157,6 +164,7 @@
             <a href=""><img src="Imagens/cha.jpg" alt="" width="400px" height="280px" class="imagens"></a>
         </div>
     </div>
+
     <footer>
         <div class="divFooter">
             <ul>
@@ -176,7 +184,7 @@
                 <li><a href="">Vegano</a></li>
                 <li><a href="">Carne</a></li>
                 <li><a href="">Prato Feito</a></li>
-            </ul>
+            </ul><br>
         </div>
 
         <div class="divFooter">
@@ -210,6 +218,34 @@
 
     </footer>
     <script>
-
+        var cnt = 0;
+        var clicou = false; 
+        function copiar(){
+           var teste =  document.getElementById("commentButto");
+           teste.select();
+           document.execCommand('Copy');
+           alert(teste.value);
+        }
+        function corazon(){
+            var coracao = document.getElementById("corazon");
+            
+            coracao.style.color = "red";
+            var gostei = document.getElementById("likes");
+            cnt++;
+            
+            if(clicou){
+                cnt = cnt -2;
+                coracao.style.color = "black";
+                clicou = false;
+            }
+            else{
+                clicou = true;
+            }
+            gostei.innerText = " " + cnt;
+            // if(cnt <= 0 )
+            //cnt.toString;
+            // p.text = " " 
+        }
+        
     </script>
 </body>
