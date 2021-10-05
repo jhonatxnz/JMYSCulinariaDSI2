@@ -279,6 +279,9 @@ border-radius: 100px;
 width: 70px;
 height: 70px;
 }
+footer{
+   background-color: #95b8ce;
+}
 .divFooter {
    display: inline-block;
    margin-left: 110px;
