@@ -265,12 +265,20 @@ hr{
    border: 1px solid rgb(228, 225, 225);
    width: 700px;
 }
-/*---------------------Rodape---------------------*/
-
-footer {
-   background-color: #95b8ce;
+#adcComentario{
+   width: 670px;
+   height: 40px;
+   border-radius: 100px;
+  
 }
-
+#buscaa2{
+position: absolute;
+top: 189.9%;
+right: 240.9px;
+border-radius: 100px;
+width: 70px;
+height: 70px;
+}
 .divFooter {
    display: inline-block;
    margin-left: 110px;
@@ -324,3 +332,4 @@ span {
 .gg-chevron-up {
    color: white;
 }
+
