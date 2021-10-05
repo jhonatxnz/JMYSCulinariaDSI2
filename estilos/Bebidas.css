@@ -68,7 +68,6 @@ body {
 
 /*--------------------Barra de pesquisa--------------------------*/
 
-
 .container {
    width: 15%;
    position: relative;
@@ -134,11 +133,6 @@ img {
    color: black;
 }
 
-h2 {
-   font-family: 'Lato', sans-serif;
-   font-family: 'Play', sans-serif;
-}
-
 .estrelas {
    height: 40px;
    width: 140px;
@@ -190,6 +184,12 @@ h2 {
 
 /*---------------------Rodape---------------------*/
 
+h2, h1 {
+   font-family: sans-serif;
+   /* animation: cor 8s 1;
+   animation-iteration-count: infinite; */
+}
+
 footer {
    background-color: #95b8ce;
 }
@@ -199,16 +199,16 @@ footer {
    margin-left: 110px;
    color: white;
    height: 30%;
-   
 }
 
 .divFooter ul {
    list-style: none;
-   text-decoration: none;  
+   text-decoration: none;
 }
-.divFooter ul a{
+
+.divFooter ul a {
    color: white;
-   text-decoration: none;  
+   text-decoration: none;
 }
 
 #buttonn {
