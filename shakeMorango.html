@@ -143,8 +143,8 @@
                         <p id="opiniao">Shake maravilhoso,vou tentar com outras frutas</p>
                     </div>
                     <div id="ladoDireito">
-                        <i class="fa fa-heart" style="font-size:24px" id="corazon" onclick="corazon()"></i>
-                        <p id="likes">   </p>
+                        <i class="fa fa-heart" style="font-size:24px" id="corazons" onclick="corazons()"></i>
+                        <p id="likes2">   </p>
                     </div>
                 </div>
             </div>
@@ -229,12 +229,7 @@
     <script>
         var cnt = 0;
         var clicou = false; 
-        function copiar(){
-           var teste =  document.getElementById("commentButto");
-           teste.select();
-           document.execCommand('Copy');
-           alert(teste.value);
-        }
+        
         function corazon(){
             var coracao = document.getElementById("corazon");
             
@@ -254,6 +249,23 @@
             // if(cnt <= 0 )
             //cnt.toString;
             // p.text = " " 
+        }
+        function corazons(){
+            var coracao = document.getElementById("corazons");
+            
+            coracao.style.color = "red";
+            var gostei = document.getElementById("likes2");
+            cnt++;
+            
+            if(clicou){
+                cnt = cnt -2;
+                coracao.style.color = "black";
+                clicou = false;
+            }
+            else{
+                clicou = true;
+            }
+            gostei.innerText = " " + cnt;
         }
         
     </script>
