@@ -31,7 +31,7 @@
                                 title="Ir para página principal">
                         </a>
                     </li>
-                    <li><a href="">Bebida</a></li>
+                    <li><a href="pagBebidas.html" style="color: black;">Bebida</a></li>
                     <li><a href="">Massa</a></li>
                     <li><a href="">Sobremesa</a></li>
                     <li><a href="">Fitnees</a></li>
@@ -76,7 +76,7 @@
                     <p>0 estrelas</p>
                     
                     <i class="gg-arrow-top-right-o" style="color: #95b8ce"
-                        title="Ver comentários"></i>
+                        title="Função indisponível no momento"></i>
                     <p>compartilhe</p>
                 </div>
             </div>
@@ -106,10 +106,14 @@
                     <i class="fa fa-comments-o" id="commentIcon"></i>
                     <h2>Comentários:</h2>
                 </div>
-                <label for="fname">
-                    <div id="adcComentario">
-                        <input type="search" id="adcComentario" name="q" placeholder="Adicione um comentário....">
-                        <a id="buscaa2"><i class="gg-arrow-right-o"></i></button></a>
+                
+                    <div class="adcComentario">
+                        <input type="text"  name="q" placeholder="  Adicione um comentário...."/>
+                        <button class="ir" type="submit">
+                            <a id="buscaa2">
+                                <i class="gg-arrow-right-o"></i>
+                            </a>
+                        </button>
                     </div>
                 <div id="commentIsolado">
                      
@@ -245,7 +249,7 @@
             else{
                 clicou = true;
             }
-            gostei.innerText = " " + cnt;
+            gostei.innerText = "" + cnt;
             // if(cnt <= 0 )
             //cnt.toString;
             // p.text = " " 
@@ -265,7 +269,7 @@
             else{
                 clicou = true;
             }
-            gostei.innerText = " " + cnt;
+            gostei.innerText = "" + cnt;
         }
         
     </script>
