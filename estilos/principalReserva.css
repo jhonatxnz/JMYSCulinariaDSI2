@@ -367,7 +367,7 @@ body {
 }
 
 .bordaRanking{
-    border: 3px solid black;
+    
     margin-left: 0.7px;
 }
 #imgpodio{
@@ -403,7 +403,7 @@ body {
 }
  
 .divRanking{
-    background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(182, 223, 248),rgba(128, 175, 204, 0.521),rgb(149, 184, 206));
+    background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(182, 223, 248),rgba(128, 175, 204, 0.521),rgb(149, 184, 206), rgb(255, 255, 255));
 }
 /* #lugar2{
     margin-left: 200px;
