@@ -59,14 +59,41 @@
             
             <div id="card">
                 <h1 id="pisca">Adicionar receita</h1>
-                <h2>Vamos começar pelo card de visualização:</h2><br>
+                <h2 id="h2Centralizado">Vamos começar pelo card de visualização:</h2><br>
                 
-                <input type="text" name="" id="nomeReceita" placeholder="NOME DA RECEITA"><br>
+                <input type="text" name="" id="nomeReceita" placeholder="NOME DA RECEITA"><br><br>
                 <input type="text" name="" id="nomeReceita" placeholder="DESCRIÇÃO"><br>
-                <input type="file" name="" id=""><br><br><br>
-                <h3>Um exemplo de como ficaria:</h3>
-                <img src="imagens/card.png" alt="">
+                <h2 id="h2Centralizado">Insira a imagem principal:</h2>
+                <img src="imagens/logoInstagram.png" alt="Selecione uma imagem" id="imgPhoto" width="300px" height="300px">
+                <input type="file" id="flImage" name="fImage" accept="image/*">
                 
+                <h2 id="h2Centralizado">Um exemplo de como ficaria:</h2>
+                <img src="imagens/card.png" alt="">
+                <!-- RECEITA PRINCIPAL -->
+                <h2 id="h2Centralizado" >Agora vamos colocar a sua receita:</h2>
+                <input type="text" name="" id="nomeReceita" placeholder="NOME DA RECEITA"><br><br>
+                
+                <label for="">Tempo de preparo:</label>
+                <input type="number" name="" id="auxReceita">
+                <label for="">minutos.</label>
+                <label for="">Porções:</label>
+                <input type="number" name="" id="auxReceita">
+                <label for="">porções.</label>
+                
+                <div class="select">
+                    <select name="format" id="format">
+                       <option selected disabled>Escolha uma categoria</option>
+                       <option value="Bebidas">Bebidas</option>
+                       <option value="Massas">Massas</option>
+                       <option value="Sobremesas">Sobremesas</option>
+                       <option value="Fitnees">Fitnees</option>
+                       <option value="Vegano">Vegano</option>
+                       <option value="Carne">Carne</option>
+                       <option value="Prato feito">Prato feito</option>
+                    </select>
+                 </div>
+                 <h2>Ingredientes</h2>
+                 
             </div>
             
         </div>
@@ -75,8 +102,33 @@
             
         </div>
     </div>
+    <script>
+        'use strict'
 
-    <!-- <footer>
+        let photo = document.getElementById('imgPhoto');
+        let file = document.getElementById('flImage');
+
+        photo.addEventListener('click', () => {
+            file.click();
+        });
+
+        file.addEventListener('change', () => {
+
+            if (file.files.length <= 0) {
+                return;
+            }
+
+            let reader = new FileReader();
+
+            reader.onload = () => {
+                photo.src = reader.result;
+            }
+
+            reader.readAsDataURL(file.files[0]);
+        });
+    </script>
+
+     <footer>
         <div class="divFooter">
             <ul>
                 <h2>JMYS</h2>
@@ -127,48 +179,5 @@
             <br><br><br><br><br><br>
         </div>
 
-    </footer> -->
-    <script>
-        var cnt = 0;
-        var clicou = false; 
-        
-        function corazon(){
-            var coracao = document.getElementById("corazon");
-            
-            coracao.style.color = "red";
-            var gostei = document.getElementById("likes");
-            cnt++;
-            
-            if(clicou){
-                cnt = cnt -2;
-                coracao.style.color = "black";
-                clicou = false;
-            }
-            else{
-                clicou = true;
-            }
-            gostei.innerText = "" + cnt;
-            // if(cnt <= 0 )
-            //cnt.toString;
-            // p.text = " " 
-        }
-        function corazons(){
-            var coracao = document.getElementById("corazons");
-            
-            coracao.style.color = "red";
-            var gostei = document.getElementById("likes2");
-            cnt++;
-            
-            if(clicou){
-                cnt = cnt -2;
-                coracao.style.color = "black";
-                clicou = false;
-            }
-            else{
-                clicou = true;
-            }
-            gostei.innerText = "" + cnt;
-        }
-        
-    </script>
+    </footer>
 </body>
