@@ -1,0 +1,249 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    overflow-x: hidden;
+    background-color: rgba(241, 246, 247, 0.979);
+}
+
+h2, h1 {
+    font-family: sans-serif;
+    /* animation: cor 8s 1;
+    animation-iteration-count: infinite; */
+}
+
+#pisca {
+    animation: cor 8s 1;
+    animation-iteration-count: infinite;
+    text-align: center;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 400%;
+    
+}
+
+@keyframes cor {
+    0% {
+        color: red;
+    }
+    10% {
+        color: orange;
+    }
+    20% {
+        color: yellow;
+    }
+    30% {
+        color: yellowgreen;
+    }
+    40% {
+        color: green;
+    }
+    50% {
+        color: cyan;
+    }
+    60% {
+        color: blue;
+    }
+    70% {
+        color: purple;
+    }
+    80% {
+        color: pink;
+    }
+    90% {
+        color: rgb(89, 0, 255);
+    }
+    100% {
+        color: rgb(255, 0, 64);
+    }
+}
+
+/*---------------------------MENU-----------------------------------*/
+
+#cabecalho ul {
+    padding-left: 20px;
+    margin: 0;
+    background-color: #aeccdd;
+    list-style: none;
+    font-family: cursive;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+#cabecalho ul li {
+    display: inline;
+}
+
+#cabecalho ul li a {
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#cabecalho ul li a:hover {
+    color: rgb(31, 30, 30);
+    font-family: cursive;
+    font-size: 18px;
+}
+
+/*--------------------Adicinar receita--------------------------*/
+
+#adcReceita {
+    margin-left: 18%;
+}
+
+#efeito {
+    position: absolute;
+    left: 70.2%;
+    opacity: 0;
+}
+
+#efeito {
+    opacity: 1;
+    animation: loading 10s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*--------------------Barra de pesquisa--------------------------*/
+
+.containerr {
+    width: 15%;
+    /* define a largura do campo */
+    position: relative;
+    /* cria o contexto de posicionamento do botão */
+    position: absolute;
+    top: 1%;
+    left: 80%;
+}
+
+#busca {
+    width: 100%;
+}
+
+#busca, #buscaa {
+    padding: 10px;
+}
+
+#buscaa {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*---------------------Corpo-------------------------*/
+
+#colunaE, #colunaD {
+    float: left;
+    width: 25%;
+    justify-content: center;
+    background-color: rgba(241, 246, 247, 0.979);
+}
+
+#coluna {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    background-color: rgba(241, 246, 247, 0.979);
+}
+
+#container {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* width: 100%;
+    padding: 15px; */
+}
+
+#card {
+    background-color: white;
+    width: 95%;
+    /* justify-content: center;
+    text-align: center;
+    border-radius: 20px; */
+}
+#nomeReceita{
+    width: 90%;
+    height: 35px;
+    border-radius: 30px;
+    background-color: rgb(224, 221, 221);
+    border: transparent;
+}
+
+#conteudo {
+    background-color: thistle;
+}
+
+/* rodape */
+
+footer {
+    background-color: #95b8ce;
+}
+
+.divFooter {
+    display: inline-block;
+    margin-left: 110px;
+    color: white;
+    height: 30%;
+}
+
+.divFooter ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.divFooter ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.lista {
+    list-style: none;
+    text-decoration: none;
+}
+
+.ingMdp {
+    padding: 3px;
+}
+
+.imagens:hover {
+    transition: all 0.5s;
+    width: 410px;
+    height: 290px;
+}
+
+span {
+    color: #aeccdd;
+}
+
+.gg-comment {
+    font-size: 200px;
+}
+
+/*---------------------Botao que rola para cima---------------------*/
+
+#rolarPcima {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+.gg-chevron-up {
+    color: white;
+}

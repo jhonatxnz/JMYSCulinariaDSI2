@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/ShakeMorango.css">
+    <link rel="stylesheet" href="estilos/adicionaReceita.css">
     <link href='https://css.gg/alarm.css' rel='stylesheet'>
     <link href='https://css.gg/bowl.css' rel='stylesheet'>
     <link href='https://css.gg/comment.css' rel='stylesheet'>
@@ -16,12 +16,11 @@
     <link href='https://css.gg/arrow-right-o.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Shake de morango</title>
+    <title>Adicionar receita</title>
 </head>
 
 <body>
     <header>
-
         <nav>
             <div id="cabecalho">
                 <ul>
@@ -31,7 +30,7 @@
                                 title="Ir para página principal">
                         </a>
                     </li>
-                    <li><a href="pagBebidas.html" style="color: black;">Bebida</a></li>
+                    <li><a href="pagBebidas.html">Bebida</a></li>
                     <li><a href="pagMassas.html">Massa</a></li>
                     <li><a href="pagSobremesa.html">Sobremesa</a></li>
                     <li><a href="pagFitnees.html">Fitnees</a></li>
@@ -43,141 +42,41 @@
                     <img src="Imagens/facaGarfo.png" alt="" width="50px" height="50px" id="adcReceita">
 
                     <form action=" " method="post">
-                        <div class="container">
+                        <div class="containerr">
                             <input type="search" id="busca" name="q" placeholder="Buscar">
                             <button type="submit" id="buscaa">OK</button>
                         </div>
                     </form>
                 </ul>
             </div>
-
         </nav>
     </header>
     <div id="container">
         <div id="colunaE">
-
+                
         </div>
         <div id="coluna">
-            <h1 id="pisca">Shake de morango</h1>
-            <div id="paraImg">
-                <img src="Imagens/morango.jpg" alt="">
-                <div id="detalhes">
-                    <br>
-                    <i class="gg-alarm" style="color: #95b8ce"></i>
-                    <p>15 minutos</p>
-                    <i class="gg-bowl" style="color: #95b8ce"></i>
-                    <p>2 porções</p>
-                    <a href="#containerComment">
-                        <button id="commentButton"><i class="gg-comment" style="color: #95b8ce"
-                                title="Ver comentários"></i></button>
-                    </a>
-                    <p>0 comentários</p>
-                    <i class="gg-sun" style="color: #95b8ce"></i>
-                    <p>0 estrelas</p>
-                    
-                    <i class="gg-arrow-top-right-o" style="color: #95b8ce"
-                        title="Função indisponível no momento"></i>
-                    <p>compartilhe</p>
-                </div>
-            </div>
-
-            <h1>Descrição:</h1>
             
-            <p style="font-size: 20px;">
-                Para refrescar o calor, abuse da Vitamina de Morango, além de gostosa é muito nutritiva.
-            </p>
-            <h1>Ingredientes:</h1>
-            <ul class="lista">
-                <li class="ingMdp"><span>&#10148;</span> 400ml ou 2 xícaras de chá de leite.</li>
-                <li class="ingMdp"><span>&#10148;</span> 300g ou 1 caixa de morangos.</li>
-                <li class="ingMdp"><span>&#10148;</span> 200g de ou ⅔ de xícara de chá de Confeitar e Leite Condensado.</li>
-            </ul>
-            <h1>Modo de preparo:</h1>
-            <ul class="lista">
-                <li class="ingMdp"><span>&#10148;</span> Bata todos os ingredientes no liquidificador até ficar
-                    homogêneo.</li>
-                <li class="ingMdp"><span>&#10148;</span> Sirva gelado ou temperatura ambiente.</li>
-            </ul>
-
-
-            <div id="containerComment">
-                <div id="comentarios">
-                    <i class="fa fa-comments-o" id="commentIcon"></i>
-                    <h2>Comentários:</h2>
-                </div>
+            <div id="card">
+                <h1 id="pisca">Adicionar receita</h1>
+                <h2>Vamos começar pelo card de visualização:</h2><br>
                 
-                    <div class="adcComentario">
-                        <input type="text"  name="q" placeholder="  Adicione um comentário...."/>
-                        <button class="ir" type="submit">
-                            <a id="buscaa2">
-                                <i class="gg-arrow-right-o"></i>
-                            </a>
-                        </button>
-                    </div>
-                <div id="commentIsolado">
-                     
-                    <div id="ladoEsquerdo">
-                        <img src="Imagens/user.png" alt="" width="60px" height="60px" class="usuarios">
-                       
-                        
-                        <div id="informacoes">
-                            <p>Renan</p>
-                            <p>26/09/2021</p>
-                        </div>
-                    </div>
-                    <div id="ladoMeio">
-                        <p id="opiniao">Ótima receita!!!super recomendo pra quem está na dúvida 😁</p>
-                    </div>
-                    <div id="ladoDireito">
-                        <i class="fa fa-heart" style="font-size:24px" id="corazon" onclick="corazon()"></i>
-                        <p id="likes">   </p>
-                    </div>
-                </div>
-                <hr id="hr">
-                <div id="commentIsolado">
-                    <div id="ladoEsquerdo">
-                        <img src="Imagens/user.png" alt="" width="60px" height="60px" class="usuarios">
-                        <div id="informacoes">
-                            <p>Solange</p>
-                            <p>04/10/2021</p>
-                        </div>
-                    </div>
-                    <div id="ladoMeio">
-                        <p id="opiniao">Shake maravilhoso,vou tentar com outras frutas</p>
-                    </div>
-                    <div id="ladoDireito">
-                        <i class="fa fa-heart" style="font-size:24px" id="corazons" onclick="corazons()"></i>
-                        <p id="likes2">   </p>
-                    </div>
-                </div>
+                <input type="text" name="" id="nomeReceita" placeholder="NOME DA RECEITA"><br>
+                <input type="text" name="" id="nomeReceita" placeholder="DESCRIÇÃO"><br>
+                <input type="file" name="" id=""><br><br><br>
+                <h3>Um exemplo de como ficaria:</h3>
+                <img src="imagens/card.png" alt="">
+                
             </div>
-
+            
         </div>
 
         <div id="colunaD">
-
-
+            
         </div>
     </div>
 
-    <h1 style="padding: 10px;">Veja também: </h1>
-
-    <div id="colunaDeitada">
-        <div class="caixa">
-            <h1>Vitamina de abacate</h1>
-            <a href=""><img src="Imagens/abacate.jpg" alt="" width="400px" height="280px" class="imagens"></a>
-        </div>
-        <div class="caixa">
-            <h1>Vitamina de banana</h1>
-            <a href=""><img src="Imagens/banana.jpg" alt="" width="400px" height="280px" class="imagens"></a>
-        </div>
-        <div class="caixa">
-            <h1>Chá</h1>
-            <a href=""><img src="Imagens/cha.jpg" alt="" width="400px" height="280px" class="imagens"></a>
-        </div>
-    </div>
-
-    <footer>
+    <!-- <footer>
         <div class="divFooter">
             <ul>
                 <h2>JMYS</h2>
@@ -228,7 +127,7 @@
             <br><br><br><br><br><br>
         </div>
 
-    </footer>
+    </footer> -->
     <script>
         var cnt = 0;
         var clicou = false; 
