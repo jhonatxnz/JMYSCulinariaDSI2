@@ -63,22 +63,26 @@
                 
                 <input type="text" name="" id="nomeReceita" placeholder="NOME DA RECEITA"><br><br>
                 <input type="text" name="" id="nomeReceita" placeholder="DESCRIÇÃO"><br>
-                <h2 id="h2Centralizado">Insira a imagem principal:</h2>
-                <img src="imagens/logoInstagram.png" alt="Selecione uma imagem" id="imgPhoto" width="300px" height="300px">
+                <h2 id="h2Centralizado">Insira a imagem da sua receita:</h2>
+                <img src="imagens/logoInstagram.png" alt="Selecione uma imagem" id="imgPhoto" width="300px" height="300px" style="margin-left:260px;">
                 <input type="file" id="flImage" name="fImage" accept="image/*">
                 
-                <h2 id="h2Centralizado">Um exemplo de como ficaria:</h2>
-                <img src="imagens/card.png" alt="">
+                <h2 id="h2Centralizado">Aqui vai um exemplo de como ficaria:</h2>
+                <img src="imagens/card.png" alt="" style="margin-left:260px">
                 <!-- RECEITA PRINCIPAL -->
-                <h2 id="h2Centralizado" >Agora vamos colocar a sua receita:</h2>
+                <h2 id="h2Centralizado" >Agora vamos montar sua deliciosa receita:</h2>
                 <input type="text" name="" id="nomeReceita" placeholder="NOME DA RECEITA"><br><br>
                 
-                <label for="">Tempo de preparo:</label>
+                <div id="opces">
+                <label for="" id="opcoes">Tempo de preparo:</label>
                 <input type="number" name="" id="auxReceita">
-                <label for="">minutos.</label>
-                <label for="">Porções:</label>
+                <label for="" id="opcoes">minutos.</label><br><br>
+                <label for="" id="opcoes">Porções:</label>
                 <input type="number" name="" id="auxReceita">
                 <label for="">porções.</label>
+                </div>
+                                                                                        
+                <br><br>
                 
                 <div class="select">
                     <select name="format" id="format">
@@ -91,9 +95,25 @@
                        <option value="Carne">Carne</option>
                        <option value="Prato feito">Prato feito</option>
                     </select>
-                 </div>
-                 <h2>Ingredientes</h2>
-                 
+                 </div><br>
+                 <div class="detalhes">
+                    <a><img src="imagens/iconeNotas.png" height="70px" width="70px" id="iconeReceita"></a>
+                    <h2 id="h2Centralizado1">Ingredientes:</h2></div>
+                    <textarea id="comentario" name="w3review" rows="20" cols="70"></textarea>
+                    <br><br>
+                    <div class="detalhes">
+                        <a><img src="imagens/panela-de-arroz.png" height="50px" width="50px" id="iconeReceita"></a>
+                        <h2 id="h2Centralizado1">Modo de preparo:</h2></div>
+                        <textarea id="comentario" name="w3review" rows="20" cols="70"></textarea><br><br>
+                        <button type="button">Enviar</button>
+
+                        <br><br><br>
+                 <!-- <div class="adicioneRE">
+                     
+                     <br><br><br>
+                    
+                    <br><br><br><br><br>
+                 </div> -->
             </div>
             
         </div>
@@ -128,6 +148,8 @@
         });
     </script>
 
+
+    <br><br>
      <footer>
         <div class="divFooter">
             <ul>
