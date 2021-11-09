@@ -53,104 +53,78 @@
     </header>
     <div id="container">
         <div id="colunaE">
-                
+
         </div>
         <div id="coluna">
-            
+
             <div id="card">
                 <h1 id="pisca">Adicionar receita</h1>
                 <h2 id="h2Centralizado">Vamos começar pelo card de visualização:</h2><br>
-                
+
                 <input type="text" name="" id="nomeReceita" placeholder="NOME DA RECEITA"><br><br>
                 <input type="text" name="" id="nomeReceita" placeholder="DESCRIÇÃO"><br>
                 <h2 id="h2Centralizado">Insira a imagem da sua receita:</h2>
-                <img src="imagens/logoInstagram.png" alt="Selecione uma imagem" id="imgPhoto" width="300px" height="300px" style="margin-left:260px;">
+                <img src="imagens/logoInstagram.png" alt="Selecione uma imagem" id="imgPhoto" width="300px"
+                    height="300px">
                 <input type="file" id="flImage" name="fImage" accept="image/*">
-                
+
                 <h2 id="h2Centralizado">Aqui vai um exemplo de como ficaria:</h2>
-                <img src="imagens/card.png" alt="" style="margin-left:260px">
+                <img src="imagens/card.png" alt="" id="image">
                 <!-- RECEITA PRINCIPAL -->
-                <h2 id="h2Centralizado" >Agora vamos montar sua deliciosa receita:</h2>
+                <h2 id="h2Centralizado">Agora vamos montar sua deliciosa receita:</h2>
                 <input type="text" name="" id="nomeReceita" placeholder="NOME DA RECEITA"><br><br>
-                
+
                 <div id="opces">
-                <label for="" id="opcoes">Tempo de preparo:</label>
-                <input type="number" name="" id="auxReceita">
-                <label for="" id="opcoes">minutos.</label><br><br>
-                <label for="" id="opcoes">Porções:</label>
-                <input type="number" name="" id="auxReceita">
-                <label for="">porções.</label>
+                    <label for="" id="opcoes">Tempo de preparo:</label>
+                    <input type="number" name="" id="auxReceita">
+                    <label for="" id="opcoes">minutos.</label><br><br>
+                    <label for="" id="opcoes">Porções:</label>
+                    <input type="number" name="" id="auxReceita">
+                    <label for="">porções.</label>
                 </div>
-                                                                                        
+
                 <br><br>
-                
+
                 <div class="select">
                     <select name="format" id="format">
-                       <option selected disabled>Escolha uma categoria</option>
-                       <option value="Bebidas">Bebidas</option>
-                       <option value="Massas">Massas</option>
-                       <option value="Sobremesas">Sobremesas</option>
-                       <option value="Fitnees">Fitnees</option>
-                       <option value="Vegano">Vegano</option>
-                       <option value="Carne">Carne</option>
-                       <option value="Prato feito">Prato feito</option>
+                        <option selected disabled>Escolha uma categoria</option>
+                        <option value="Bebidas">Bebidas</option>
+                        <option value="Massas">Massas</option>
+                        <option value="Sobremesas">Sobremesas</option>
+                        <option value="Fitnees">Fitnees</option>
+                        <option value="Vegano">Vegano</option>
+                        <option value="Carne">Carne</option>
+                        <option value="Prato feito">Prato feito</option>
                     </select>
-                 </div><br>
-                 <div class="detalhes">
+                </div><br>
+                <div class="detalhes">
                     <a><img src="imagens/iconeNotas.png" height="70px" width="70px" id="iconeReceita"></a>
-                    <h2 id="h2Centralizado1">Ingredientes:</h2></div>
-                    <textarea id="comentario" name="w3review" rows="20" cols="70"></textarea>
-                    <br><br>
-                    <div class="detalhes">
-                        <a><img src="imagens/panela-de-arroz.png" height="50px" width="50px" id="iconeReceita"></a>
-                        <h2 id="h2Centralizado1">Modo de preparo:</h2></div>
-                        <textarea id="comentario" name="w3review" rows="20" cols="70"></textarea><br><br>
-                        <button type="button">Enviar</button>
+                    <h2 id="h2Centralizado1">Ingredientes:</h2>
+                </div>
+                <textarea id="comentario" name="w3review" rows="20" cols="70"></textarea>
+                <br><br>
+                <div class="detalhes">
+                    <a><img src="imagens/panela-de-arroz.png" height="50px" width="50px" id="iconeReceita"></a>
+                    <h2 id="h2Centralizado1">Modo de preparo:</h2>
+                </div>
+                <textarea id="comentario" name="w3review" rows="20" cols="70"></textarea><br><br>
+                <button type="button" class="button">Enviar</button>
 
-                        <br><br><br>
-                 <!-- <div class="adicioneRE">
-                     
-                     <br><br><br>
-                    
-                    <br><br><br><br><br>
-                 </div> -->
+                <br><br><br>
+
             </div>
-            
+
         </div>
 
         <div id="colunaD">
-            
+
         </div>
     </div>
-    <script>
-        'use strict'
 
-        let photo = document.getElementById('imgPhoto');
-        let file = document.getElementById('flImage');
-
-        photo.addEventListener('click', () => {
-            file.click();
-        });
-
-        file.addEventListener('change', () => {
-
-            if (file.files.length <= 0) {
-                return;
-            }
-
-            let reader = new FileReader();
-
-            reader.onload = () => {
-                photo.src = reader.result;
-            }
-
-            reader.readAsDataURL(file.files[0]);
-        });
-    </script>
 
 
     <br><br>
-     <footer>
+    <footer>
         <div class="divFooter">
             <ul>
                 <h2>JMYS</h2>
@@ -186,9 +160,9 @@
         <div class="divFooter">
             <ul>
                 <h2>Interaja com a gente</h2>
-                <a href=""><img src="Imagens/logoFacebook.png" alt="" width="32px" height="32px"
+                <a href="https://www.facebook.com/JMYS-109075644863843"><img src="Imagens/logoFacebook.png" alt="" width="32px" height="32px"
                         style="margin-bottom: 4.3px;" title="Facebook"></a>
-                <a href=""><img src="Imagens/logoInstagram.png" width="40px" height="40px" title="Instagram"></a>
+                <a href="https://www.instagram.com/jmysculinaria/"><img src="Imagens/logoInstagram.png" width="40px" height="40px" title="Instagram"></a>
                 <br><br><br><br><br><br><br>
             </ul>
         </div>
@@ -202,4 +176,29 @@
         </div>
 
     </footer>
+    <script>
+        'use strict'
+
+        let photo = document.getElementById('imgPhoto');
+        let file = document.getElementById('flImage');
+
+        photo.addEventListener('click', () => {
+            file.click();
+        });
+
+        file.addEventListener('change', () => {
+
+            if (file.files.length <= 0) {
+                return;
+            }
+
+            let reader = new FileReader();
+
+            reader.onload = () => {
+                photo.src = reader.result;
+            }
+
+            reader.readAsDataURL(file.files[0]);
+        });
+    </script>
 </body>

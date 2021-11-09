@@ -47,7 +47,8 @@ body {
 
 #efeito {
     position: absolute;
-    left: 70.6%;
+    margin-top: -33px;
+    left: 70.8%;
     opacity: 0;
 }
 

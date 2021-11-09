@@ -99,7 +99,7 @@ h2, h1 {
 
 #efeito {
     position: absolute;
-    left: 70.2%;
+    left: 70.5%;
     opacity: 0;
 }
 
@@ -188,7 +188,7 @@ h2, h1 {
     background-color: rgb(224, 221, 221);
     border: solid 2.5px transparent;
     padding: 8px;
-    margin-left: 20%;
+    margin-left: 15%;
     text-align: center;
 }
 #nomeReceita:hover, #format:hover{
@@ -208,6 +208,7 @@ input[type='file'] {
     cursor: pointer;
     transition: background .3s;
     text-align: center;
+    margin-left: 31%;
 }
 
 #imgPhoto:hover{
@@ -218,6 +219,9 @@ input[type='file'] {
     background-color: rgb(180, 180, 180);
     border: solid 5px #0c6497e1;
 }
+#image{
+    margin-left: 31%;
+}
 #opcoes{
     font-family: cursive;
     font-size: 18px;
@@ -226,19 +230,64 @@ input[type='file'] {
 #opces{
     text-align: center;
 }
+/*  */
+
 #format{
     text-align: center;
 }
-.adicioneRE{
-    background-image: url("receita.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background-color: rgb(224, 221, 221);
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:black;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif; 
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+    text-align: center;
+    margin-left: 31%;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #949999;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #aeccdd;
+ }
+
 textarea{
     margin-left: 35%;
     margin-top: 11%;
     border: solid 3px transparent;
     background-color: rgb(255, 250, 255);
+    resize: vertical;
 }
 textarea:hover{
     border: solid 3px #3889b8;
@@ -254,7 +303,7 @@ textarea:hover{
    margin-top: -42px;
 }
 #comentario{
-    margin-left: 10%;
+    margin-left: 12.5%;
     margin-top: 1%;
     border: solid 3px black;
     background-color: rgb(255, 250, 255);
@@ -273,7 +322,7 @@ textarea:hover{
     border: transparent;
     text-align: center;
 }
-button{
+.button{
     width: 14%;
     height: 30%;
     font-size: 23px;
@@ -281,11 +330,11 @@ button{
     text-decoration: black;
     border: solid 3px transparent;
 }
-button:hover{
+.button:hover{
     border: solid 3px #266a91;
     background: #3889b8;
 }
-button{
+.button{
     -webkit-transition: .3s ease-in-out;
     -moz-transition: .3s ease-in-out;
     -ms-transition: .3s ease-in-out;
@@ -293,56 +342,10 @@ button{
     transition: .3s ease-in-out;
     opacity: 0.7;
 }
-button:hover:after{
+.button:hover:after{
     opacity: 1;
 }
-select {
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    -ms-appearance:none;
-    appearance:none;
-    outline:0;
-    box-shadow:none;
-    border:0!important;
-    background-color: rgb(224, 221, 221);
-    background-image: none;
-    flex: 1;
-    padding: 0 .5em;
-    color:black;
-    cursor:pointer;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-    
- }
- select::-ms-expand {
-    display: none;
- }
- .select {
-    position: relative;
-    display: flex;
-    width: 20em;
-    height: 3em;
-    line-height: 3;
-    background: #5c6664;
-    overflow: hidden;
-    border-radius: .25em;
-    text-align: center;
-    margin-left: 27%;
- }
- .select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0 1em;
-    background: #949999;
-    cursor:pointer;
-    pointer-events:none;
-    transition:.25s all ease;
- }
- .select:hover::after {
-    color: #aeccdd;
- }
+
 /* rodape */
 
 footer {

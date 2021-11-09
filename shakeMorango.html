@@ -38,8 +38,10 @@
                     <li><a href="pagVegano.html">Vegano</a></li>
                     <li><a href="pagCarne.html">Carne</a></li>
                     <li><a href="pagPratoFeito.html">Prato feito</a></li>
-                    <img src="Imagens/efeito4.gif" alt="" width="70px" height="70px" id="efeito"
-                        title="Adicionar receita">
+                    <a href="adicionaReceita.html">
+                        <img src="imagens/efeito4.gif" alt="" width="70px" height="70px" id="efeito"
+                            title="Adicionar receita">
+                    </a>
                     <img src="Imagens/facaGarfo.png" alt="" width="50px" height="50px" id="adcReceita">
 
                     <form action=" " method="post">
@@ -74,15 +76,14 @@
                     <p>0 comentários</p>
                     <i class="gg-sun" style="color: #95b8ce"></i>
                     <p>0 estrelas</p>
-                    
-                    <i class="gg-arrow-top-right-o" style="color: #95b8ce"
-                        title="Função indisponível no momento"></i>
+
+                    <i class="gg-arrow-top-right-o" style="color: #95b8ce" title="Função indisponível no momento"></i>
                     <p>compartilhe</p>
                 </div>
             </div>
 
             <h1>Descrição:</h1>
-            
+
             <p style="font-size: 20px;">
                 Para refrescar o calor, abuse da Vitamina de Morango, além de gostosa é muito nutritiva.
             </p>
@@ -90,7 +91,8 @@
             <ul class="lista">
                 <li class="ingMdp"><span>&#10148;</span> 400ml ou 2 xícaras de chá de leite.</li>
                 <li class="ingMdp"><span>&#10148;</span> 300g ou 1 caixa de morangos.</li>
-                <li class="ingMdp"><span>&#10148;</span> 200g de ou ⅔ de xícara de chá de Confeitar e Leite Condensado.</li>
+                <li class="ingMdp"><span>&#10148;</span> 200g de ou ⅔ de xícara de chá de Confeitar e Leite Condensado.
+                </li>
             </ul>
             <h1>Modo de preparo:</h1>
             <ul class="lista">
@@ -105,21 +107,21 @@
                     <i class="fa fa-comments-o" id="commentIcon"></i>
                     <h2>Comentários:</h2>
                 </div>
-                
-                    <div class="adcComentario">
-                        <input type="text"  name="q" placeholder="  Adicione um comentário...."/>
-                        <button class="ir" type="submit">
-                            <a id="buscaa2">
-                                <i class="gg-arrow-right-o"></i>
-                            </a>
-                        </button>
-                    </div>
+
+                <div class="adcComentario">
+                    <input type="text" name="q" placeholder="  Adicione um comentário...." />
+                    <button class="ir" type="submit">
+                        <a id="buscaa2">
+                            <i class="gg-arrow-right-o"></i>
+                        </a>
+                    </button>
+                </div>
                 <div id="commentIsolado">
-                     
+
                     <div id="ladoEsquerdo">
                         <img src="Imagens/user.png" alt="" width="60px" height="60px" class="usuarios">
-                       
-                        
+
+
                         <div id="informacoes">
                             <p>Renan</p>
                             <p>26/09/2021</p>
@@ -130,7 +132,7 @@
                     </div>
                     <div id="ladoDireito">
                         <i class="fa fa-heart" style="font-size:24px" id="corazon" onclick="corazon()"></i>
-                        <p id="likes">   </p>
+                        <p id="likes"> </p>
                     </div>
                 </div>
                 <hr id="hr">
@@ -147,7 +149,7 @@
                     </div>
                     <div id="ladoDireito">
                         <i class="fa fa-heart" style="font-size:24px" id="corazons" onclick="corazons()"></i>
-                        <p id="likes2">   </p>
+                        <p id="likes2"> </p>
                     </div>
                 </div>
             </div>
@@ -213,9 +215,10 @@
         <div class="divFooter">
             <ul>
                 <h2>Interaja com a gente</h2>
-                <a href=""><img src="Imagens/logoFacebook.png" alt="" width="32px" height="32px"
-                        style="margin-bottom: 4.3px;" title="Facebook"></a>
-                <a href=""><img src="Imagens/logoInstagram.png" width="40px" height="40px" title="Instagram"></a>
+                <a href="https://www.facebook.com/JMYS-109075644863843"><img src="Imagens/logoFacebook.png" alt=""
+                        width="32px" height="32px" style="margin-bottom: 4.3px;" title="Facebook"></a>
+                <a href="https://www.instagram.com/jmysculinaria/"><img src="Imagens/logoInstagram.png" width="40px"
+                        height="40px" title="Instagram"></a>
                 <br><br><br><br><br><br><br>
             </ul>
         </div>
@@ -231,21 +234,21 @@
     </footer>
     <script>
         var cnt = 0;
-        var clicou = false; 
-        
-        function corazon(){
+        var clicou = false;
+
+        function corazon() {
             var coracao = document.getElementById("corazon");
-            
+
             coracao.style.color = "red";
             var gostei = document.getElementById("likes");
             cnt++;
-            
-            if(clicou){
-                cnt = cnt -2;
+
+            if (clicou) {
+                cnt = cnt - 2;
                 coracao.style.color = "black";
                 clicou = false;
             }
-            else{
+            else {
                 clicou = true;
             }
             gostei.innerText = "" + cnt;
@@ -253,23 +256,23 @@
             //cnt.toString;
             // p.text = " " 
         }
-        function corazons(){
+        function corazons() {
             var coracao = document.getElementById("corazons");
-            
+
             coracao.style.color = "red";
             var gostei = document.getElementById("likes2");
             cnt++;
-            
-            if(clicou){
-                cnt = cnt -2;
+
+            if (clicou) {
+                cnt = cnt - 2;
                 coracao.style.color = "black";
                 clicou = false;
             }
-            else{
+            else {
                 clicou = true;
             }
             gostei.innerText = "" + cnt;
         }
-        
+
     </script>
 </body>
