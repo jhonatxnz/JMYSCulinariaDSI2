@@ -99,7 +99,7 @@ body
 
 
 
-/* ---------------------Meu codigo------------------- */
+/* ---------------------css principal------------------- */
 
 
 #ContatoTitle
@@ -113,8 +113,8 @@ body
 
 #imgContato
 {
-   margin-left: 150px;
    margin-bottom: 90px;
+   width: 1800px;
 }
 
 
