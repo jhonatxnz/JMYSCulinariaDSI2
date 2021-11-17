@@ -77,7 +77,7 @@
                     <i class="gg-sun" style="color: #95b8ce"></i>
                     <p>0 estrelas</p>
 
-                    <i class="gg-arrow-top-right-o" style="color: #95b8ce" title="Função indisponível no momento"></i>
+                    <i class="gg-arrow-top-right-o" style="color: #95b8ce" title="Função indisponível no momento"  id="compartilhe" onclick="clique()"></i>
                     <p>compartilhe</p>
                 </div>
             </div>
@@ -183,8 +183,8 @@
         <div class="divFooter">
             <ul>
                 <h2>JMYS</h2>
-                <li><a href="">Nossa história</a></li>
-                <li><a href="">Contato</a></li><br><br><br><br><br><br>
+                <li><a href="sobreNos.html">Nossa história</a></li>
+                <li><a href="contato.html">Contato</a></li><br><br><br><br><br><br>
             </ul>
         </div>
 
@@ -233,8 +233,16 @@
 
     </footer>
     <script>
+        
+        var area = getElementById("compartilhe");
         var cnt = 0;
         var clicou = false;
+
+        function clique(){
+            const copyToClipboard = (text) => navigator.clipboard.writeText(text);
+            copyToClipboard("www.jmysculinaria/shakedemorango.com.br");
+            alert("Copiado para área de transferência");
+        }
 
         function corazon() {
             var coracao = document.getElementById("corazon");

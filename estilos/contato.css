@@ -114,9 +114,11 @@ body
 #imgContato
 {
    margin-bottom: 90px;
-   width: 1800px;
+   width: 100%;
 }
-
+textarea{
+   resize: vertical;
+}
 
 
 .wrapper{
